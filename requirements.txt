@@ -1,0 +1,1 @@
+# No external Python packages required (uses built-in libraries and Tkinter)
