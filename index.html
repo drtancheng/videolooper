@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ TC Smart Video Loop Generator</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1e1e2e;
+            color: #cdd6f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 750px;
+            margin: 50px 20px;
+            background: #252538;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        h1 { color: #39fdc0; margin-top: 0; }
+        .tagline { font-size: 1.1em; color: #a6adc8; line-height: 1.5; }
+        .btn-group { margin: 30px 0; display: flex; gap: 15px; flex-wrap: wrap; }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .btn-primary { background-color: #39fdc0; color: #1e1e2e; }
+        .btn-donate { background-color: #ffdd00; color: #000; }
+        .btn:hover { opacity: 0.9; }
+        ul { line-height: 1.8; }
+        .donation-box {
+            background: #11111b;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ffdd00;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ TC Smart Video Loop Generator</h1>
+        <p class="tagline">Transform short video clips into <strong>flawlessly seamless, ultra-long infinite loops</strong> in seconds! Built with Python and powered by selective FFmpeg re-encoding for 100x render speeds.</p>
+        
+        <div class="btn-group">
+            <!-- DOWNLOAD LINK IS NOW UPDATED WITH YOUR USERNAME AND REPO NAME -->
+            <a href="https://github.com/drtancheng/videolooper/releases/latest" class="btn btn-primary">🚀 Download App (.zip)</a>
+            <a href="#donate" class="btn btn-donate">☕ Support / Donate</a>
+        </div>
+
+        <h2>✨ Features</h2>
+        <ul>
+            <li><strong>Seamless Crossfades:</strong> Customizable video and audio crossfade transitions.</li>
+            <li><strong>100x Fast Rendering:</strong> Re-encodes only transition tiles; stitches video losslessly.</li>
+            <li><strong>Click-Free Audio:</strong> Rebuilds continuous audio streams without boundary clicks.</li>
+            <li><strong>Standalone Desktop UI:</strong> Clean modern dark mode interface with live terminal logs.</li>
+        </ul>
+
+        <div id="donate" class="donation-box">
+            <h3>💛 Support the Project</h3>
+            <p>If this tool saved you time or helped with your video projects, consider dropping a tip to keep development going!</p>
+            <!-- TIPPING LINK PLACEHOLDER: Replace 'YOUR-KOFI-USERNAME' below with your actual tipping/coffee username whenever you create one! -->
+            <a href="https://ko-fi.com/YOUR-KOFI-USERNAME" target="_blank" class="btn btn-donate">Buy Me a Coffee ☕</a>
+        </div>
+    </div>
+</body>
+</html>
