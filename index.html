@@ -44,6 +44,29 @@
         .btn-donate { background-color: #ffdd00; color: #000; }
         .btn:hover { opacity: 0.9; }
         ul { line-height: 1.8; }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin: 15px 0 10px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .hint-text {
+            font-size: 0.9em;
+            color: #a6adc8;
+            font-style: italic;
+            margin-top: 6px;
+        }
         .donation-box {
             background: #11111b;
             padding: 25px;
@@ -96,6 +119,14 @@
             <li><strong>Standalone Desktop UI:</strong> Clean modern dark mode interface with live terminal logs.</li>
         </ul>
 
+        <h2>🎬 Sample Video Output</h2>
+        <p>Check out this 6-hour relaxing music video generated using this app. See if you can spot the seamless loop boundary around <strong>3:59</strong>!</p>
+        
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/QgjzTieuEnc" title="Sample Video Loop Output" allowfullscreen></iframe>
+        </div>
+        <p class="hint-text">💡 Smooth visual crossfade + zero audio click/pop at the transition tile.</p>
+
         <div id="donate" class="donation-box">
             <h3>💛 Support the Project</h3>
             <p>If this tool saved you time or helped with your video projects, consider dropping a tip to keep development going!</p>
@@ -104,7 +135,7 @@
             <!-- Local Malaysian Support Note & Landscape Artwork -->
             <div class="local-note">
                 <h4>Note for Malaysian supporters 🇲🇾</h4>
-                <p>For supporters in Malaysia: Should you wish to support our initiative through a local funds transfer, the DuitNow QR code below is available for your convenience. </p>
+                <p>For supporters in Malaysia: Should you wish to support our initiative through a local funds transfer, the DuitNow QR code below is available for your convenience.</p>
                 <img src="QR.jpg" alt="Local Support via DuitNow QR" class="qr-landscape-img">
                 <p style="margin-top: 12px; font-weight: bold; color: #39fdc0;">Thank you!</p>
             </div>
