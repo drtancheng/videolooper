@@ -1,3 +1,6 @@
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://ko-fi.com/drtancheng)
+[![Live Website](https://img.shields.io/badge/Landing_Page-39fdc0?style=for-the-badge&logo=github&logoColor=black)](https://drtancheng.github.io/videolooper/)
+
 # videolooper
 Blazing-fast Python/Tkinter app for generating seamless, infinite video loops using smart selective FFmpeg encoding &amp; sub-second transition tiles.
 
@@ -41,3 +44,6 @@ The app relies on `ffmpeg` and `ffprobe` for video processing and media analysis
 4. *Alternative via Winget:*
    ```cmd
    winget install FFmpeg
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://ko-fi.com/drtancheng)
+[![Live Website](https://img.shields.io/badge/Landing_Page-39fdc0?style=for-the-badge&logo=github&logoColor=black)](https://drtancheng.github.io/videolooper/)
