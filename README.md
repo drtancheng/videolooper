@@ -14,6 +14,12 @@ Transform short video clips into **flawlessly seamless, ultra-long infinite loop
 * **Fast Rendering:** Re-encodes only boundary transition tiles.
 * **Click-Free Audio:** Rebuilds continuous audio streams without clicks or pops.
 
+## 🎬 Sample Video Output
+Check out this 6-hour relaxing music video generated using this app. See if you can spot the seamless loop boundary around **3:59**!
+
+[![Sample Video Output](https://img.youtube.com/vi/QgjzTieuEnc/maxresdefault.jpg)](https://youtu.be/QgjzTieuEnc "TC Smart Video Loop Generator Sample Output")
+*💡 Click image above to watch on YouTube (Smooth visual crossfade + zero audio clicks at transition tiles).*
+
 ---
 
 ### Note for Malaysian supporters 🇲🇾
