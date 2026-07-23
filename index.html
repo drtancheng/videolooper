@@ -24,7 +24,14 @@
         }
         h1 { color: #39fdc0; margin-top: 0; }
         .tagline { font-size: 1.1em; color: #a6adc8; line-height: 1.5; }
-        .btn-group { margin: 30px 0; display: flex; gap: 15px; flex-wrap: wrap; }
+        .app-preview {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        .btn-group { margin: 25px 0; display: flex; gap: 15px; flex-wrap: wrap; }
         .btn {
             display: inline-block;
             padding: 12px 24px;
@@ -39,10 +46,32 @@
         ul { line-height: 1.8; }
         .donation-box {
             background: #11111b;
-            padding: 20px;
+            padding: 25px;
             border-radius: 8px;
             border-left: 4px solid #ffdd00;
             margin-top: 30px;
+        }
+        .qr-landscape-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .local-note {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .local-note h4 {
+            margin: 0 0 8px 0;
+            color: #cdd6f4;
+            font-size: 1rem;
+        }
+        .local-note p {
+            margin: 0 0 12px 0;
+            font-size: 0.95rem;
+            color: #a6adc8;
         }
     </style>
 </head>
@@ -51,6 +80,9 @@
         <h1>⚡ TC Smart Video Loop Generator</h1>
         <p class="tagline">Transform short video clips into <strong>flawlessly seamless, ultra-long infinite loops</strong> in seconds! Built with Python and powered by selective FFmpeg re-encoding for 100x render speeds.</p>
         
+        <!-- App Screenshot -->
+        <img src="interface.jpg" alt="TC Smart Video Loop Generator Interface" class="app-preview">
+
         <div class="btn-group">
             <a href="https://github.com/drtancheng/videolooper/releases/latest" class="btn btn-primary">🚀 Download App (.zip)</a>
             <a href="#donate" class="btn btn-donate">☕ Support / Donate</a>
@@ -68,6 +100,14 @@
             <h3>💛 Support the Project</h3>
             <p>If this tool saved you time or helped with your video projects, consider dropping a tip to keep development going!</p>
             <a href="https://ko-fi.com/drtancheng" target="_blank" class="btn btn-donate">Buy Me a Coffee ☕</a>
+
+            <!-- Local Malaysian Support Note & Landscape Artwork -->
+            <div class="local-note">
+                <h4>Note for Malaysian supporters 🇲🇾</h4>
+                <p>For supporters in Malaysia who asked about local transfers, feel free to use the DuitNow QR.</p>
+                <img src="QR.jpg" alt="Local Support via DuitNow QR" class="qr-landscape-img">
+                <p style="margin-top: 12px; font-weight: bold; color: #39fdc0;">Thank you!</p>
+            </div>
         </div>
     </div>
 </body>
