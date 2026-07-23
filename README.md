@@ -18,7 +18,7 @@ Transform short video clips into **flawlessly seamless, ultra-long infinite loop
 
 ### Note for Malaysian supporters 🇲🇾
 
-For supporters in Malaysia who asked about local transfers, feel free to use the DuitNow QR below:
+For supporters in Malaysia: Should you wish to support our initiative through a local funds transfer, the DuitNow QR code below is available for your convenience.
 
 <p align="left">
   <img src="QR.jpg" alt="DuitNow QR Support" width="220" style="border-radius: 8px;">
