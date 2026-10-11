@@ -23,6 +23,13 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
         h1 { color: #39fdc0; margin-top: 0; }
+        h2 { 
+            color: #39fdc0; 
+            margin-top: 35px; 
+            border-bottom: 1px solid rgba(255,255,255,0.08); 
+            padding-bottom: 8px; 
+        }
+        h3 { color: #89dceb; margin-top: 20px; }
         .tagline { font-size: 1.1em; color: #a6adc8; line-height: 1.5; }
         .app-preview {
             width: 100%;
@@ -43,7 +50,12 @@
         .btn-primary { background-color: #39fdc0; color: #1e1e2e; }
         .btn-donate { background-color: #ffdd00; color: #000; }
         .btn:hover { opacity: 0.9; }
-        ul { line-height: 1.8; }
+        ul, ol { line-height: 1.8; color: #cdd6f4; }
+        li { margin-bottom: 6px; }
+        a { color: #89dceb; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        /* Video Container */
         .video-container {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 ratio */
@@ -67,19 +79,41 @@
             font-style: italic;
             margin-top: 6px;
         }
+
+        /* Code Blocks */
+        pre {
+            background-color: #11111b;
+            padding: 14px 16px;
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,0.08);
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+        code {
+            font-family: Consolas, Monaco, "Courier New", Courier, monospace;
+            color: #f38ba8;
+            font-size: 0.92em;
+        }
+        pre code {
+            color: #a6e3a1;
+        }
+
+        /* Support / Donation Box */
         .donation-box {
             background: #11111b;
             padding: 25px;
             border-radius: 8px;
             border-left: 4px solid #ffdd00;
-            margin-top: 30px;
+            margin-top: 35px;
         }
         .qr-landscape-img {
             width: 100%;
+            max-width: 240px;
             height: auto;
             border-radius: 8px;
             margin-top: 15px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            display: block;
         }
         .local-note {
             margin-top: 25px;
@@ -101,7 +135,7 @@
 <body>
     <div class="container">
         <h1>⚡ TC Smart Video Loop Generator</h1>
-        <p class="tagline">Transform short video clips into <strong>flawlessly seamless, ultra-long infinite loops</strong> in seconds! Built with Python and powered by selective FFmpeg re-encoding for 100x render speeds.</p>
+        <p class="tagline">Transform short video clips into <strong>flawlessly seamless, ultra-long infinite loops</strong> in seconds! Built with Python and powered by selective FFmpeg re-encoding for ultra-fast render speeds.</p>
         
         <!-- App Screenshot -->
         <img src="interface.jpg" alt="TC Smart Video Loop Generator Interface" class="app-preview">
@@ -114,8 +148,8 @@
         <h2>✨ Features</h2>
         <ul>
             <li><strong>Seamless Crossfades:</strong> Customizable video and audio crossfade transitions.</li>
-            <li><strong>100x Fast Rendering:</strong> Re-encodes only transition tiles; stitches video losslessly.</li>
-            <li><strong>Click-Free Audio:</strong> Rebuilds continuous audio streams without boundary clicks.</li>
+            <li><strong>Fast Rendering:</strong> Re-encodes only boundary transition tiles, leaving intermediate frames untouched.</li>
+            <li><strong>Click-Free Audio:</strong> Rebuilds continuous audio streams without boundary clicks or pops.</li>
             <li><strong>Standalone Desktop UI:</strong> Clean modern dark mode interface with live terminal logs.</li>
         </ul>
 
@@ -125,19 +159,39 @@
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/QgjzTieuEnc" title="Sample Video Loop Output" allowfullscreen></iframe>
         </div>
-        <p class="hint-text">💡 Smooth visual crossfade + zero audio click/pop at the transition tile.</p>
+        <p class="hint-text">💡 Smooth visual crossfade + zero audio clicks at transition tiles.</p>
+
+        <h2>📋 Prerequisites</h2>
+        <p>Before running the application, make sure your environment includes:</p>
+        <ul>
+            <li><strong>Python 3.8+</strong></li>
+            <li><strong>FFmpeg &amp; FFprobe</strong> installed and added to your system <code>PATH</code></li>
+        </ul>
+
+        <h2>⚙️ FFmpeg Installation Guide</h2>
+        <p>The app relies on <code>ffmpeg</code> and <code>ffprobe</code> for video processing and media analysis.</p>
+
+        <h3>Windows</h3>
+        <ol>
+            <li>Download a pre-built build from <a href="https://ffmpeg.org/download.html" target="_blank" rel="noopener">ffmpeg.org</a> or <a href="https://www.gyan.dev/ffmpeg/builds/" target="_blank" rel="noopener">Gyan.dev</a>.</li>
+            <li>Extract the ZIP file to a permanent folder (e.g., <code>C:\ffmpeg</code>).</li>
+            <li>Add the <code>C:\ffmpeg\bin</code> directory to your System <strong>Environment Variables</strong> &rarr; <code>PATH</code>.</li>
+            <li><em>Alternative via Winget:</em>
+                <pre><code>winget install FFmpeg</code></pre>
+            </li>
+        </ol>
 
         <div id="donate" class="donation-box">
             <h3>💛 Support the Project</h3>
             <p>If this tool saved you time or helped with your video projects, consider dropping a tip to keep development going!</p>
-            <a href="https://ko-fi.com/drtancheng" target="_blank" class="btn btn-donate">Buy Me a Coffee ☕</a>
+            <a href="https://ko-fi.com/drtancheng" target="_blank" rel="noopener" class="btn btn-donate">Buy Me a Coffee ☕</a>
 
-            <!-- Local Malaysian Support Note & Landscape Artwork -->
+            <!-- Local Malaysian Support Note & QR Artwork -->
             <div class="local-note">
                 <h4>Note for Malaysian supporters 🇲🇾</h4>
                 <p>For supporters in Malaysia: Should you wish to support our initiative through a local funds transfer, the DuitNow QR code below is available for your convenience.</p>
                 <img src="QR.jpg" alt="Local Support via DuitNow QR" class="qr-landscape-img">
-                <p style="margin-top: 12px; font-weight: bold; color: #39fdc0;">Thank you!</p>
+                <p style="margin-top: 14px; font-weight: bold; color: #39fdc0;">Thank you!</p>
             </div>
         </div>
     </div>
