@@ -1,29 +1,33 @@
 # ⚡ TC Smart Video Loop Generator
 
-Transform short video clips into **flawlessly seamless, ultra-long infinite loops** in seconds! 
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://ko-fi.com/drtancheng)
+[![Live Landing Page](https://img.shields.io/badge/Landing_Page-39fdc0?style=for-the-badge&logo=github&logoColor=black)](https://drtancheng.github.io/videolooper/)
 
-**TC Smart Video Loop Generator** is a modern desktop application built with Python and Tkinter. Powered by intelligent **selective FFmpeg re-encoding**, it renders only the tiny transition overlap boundaries—stitching multi-hour looping videos together losslessly at **up to 100x render speeds** without quality degradation.
+Transform short video clips into **flawlessly seamless, ultra-long infinite loops** in seconds! Powered by selective FFmpeg re-encoding for ultra-fast render speeds.
 
----
+<p align="center">
+  <img src="interface.jpg" alt="TC Smart Video Loop Generator Interface" width="800" style="border-radius: 8px;">
+</p>
 
 ## ✨ Features
+- **Seamless Crossfades:** Customizable video and audio crossfades.
+- **Fast Rendering:** Re-encodes only boundary transition tiles, leaving intermediate frames untouched.
+- **Click-Free Audio:** Rebuilds continuous audio streams without clicks or pops.
 
-- 🌀 **Seamless Crossfade Engine:** Seamlessly bridge video loop boundaries with customizable video and audio crossfades.
-- 🎨 **Cinematic Transition FX:** Support for built-in dynamic transitions including `fade`, `dissolve`, `wipeleft`, `wiperight`, `slideup`, `slidedown`, and `circleopen`.
-- ⚡ **100x Smart Render Strategy:** Bypasses full-video re-encoding by generating small transition tiles and stream-copy stitching the loop blocks losslessly.
-- 🎧 **Continuous Audio Track:** Rebuilds underlying audio into a single continuous stream, eliminating loop-boundary clicks and pops.
-- 🎯 **Dual Looping Strategies:** Choose between **Precise Duration** (truncates with a custom ending fade-out) or **Perfect Match Loop Limit** (exact loop cycles without truncation).
-- 💾 **Smart Disk Space Check:** Built-in working directory selector with live free disk space detection.
-- 🖥️ **Modern Dark Mode UI:** Clean, modern desktop terminal interface with live logging, sub-step progress tracking, and process abort control.
+## 🎬 Sample Video Output
+Check out this 6-hour relaxing music video generated using this app. See if you can spot the seamless loop boundary around **3:59**!
+
+[![Sample Video Output](https://img.youtube.com/vi/QgjzTieuEnc/maxresdefault.jpg)](https://youtu.be/QgjzTieuEnc "TC Smart Video Loop Generator Sample Output")
+*💡 Click image above to watch on YouTube (Smooth visual crossfade + zero audio clicks at transition tiles).*
 
 ---
 
 ## 📋 Prerequisites
 
-To run this app, you will need:
+Before running the application, make sure your environment includes:
 
-1. **Python 3.8+** installed on your system.
-2. **FFmpeg & FFprobe** binaries installed and accessible in your system's `PATH`[cite: 1].
+- **Python 3.8+**
+- **FFmpeg & FFprobe** installed and added to your system `PATH`
 
 ---
 
@@ -38,3 +42,12 @@ The app relies on `ffmpeg` and `ffprobe` for video processing and media analysis
 4. *Alternative via Winget:*
    ```cmd
    winget install FFmpeg
+
+
+### Note for Malaysian supporters 🇲🇾
+
+For supporters in Malaysia: Should you wish to support our initiative through a local funds transfer, the DuitNow QR code below is available for your convenience.
+
+<p align="left">
+  <img src="QR.jpg" alt="DuitNow QR Support" width="220" style="border-radius: 8px;">
+</p>
